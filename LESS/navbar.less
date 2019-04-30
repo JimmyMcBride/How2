@@ -15,31 +15,42 @@ header {
     }
     .login {
         display: flex;
-        margin: 10px 20px 0 20px;
+        align-items: flex-start;
+        margin: 10px 20px 1px 20px;
+        p {
+            margin-top: 10px;
+            @media (max-width: 465px){
+                font-size: 1.4rem;
+            }
+        }
         button {
-            margin-bottom: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
-            border-radius: 5px;
-            padding: 0 10px;
-            border: 2px outset azure;
-            background-color: azure;
+            margin-left: 40px;
+            // border-radius: 5px;
+            padding: 5px 15px;
+            border: 2px solid #400C0C;
+            background-color: orange;
+            @media (max-width: 465px){
+                margin-left: 5px;
+            }
         }
         button:hover {
-            background-color: lightslategray;
-            border-color: lightslategray;
-            color: azure;
+            background-color: #400C0C;
+            // border-color: #400C0C;
+            color: orange;
+
         }
     }
     nav {
-        padding: 5px 0px;
+        padding: 10px 0px;
         a {
             text-decoration: none;
-            color: #FA919C;
+            color: #400C0C;
             padding: 14px 20px;
+            .underline;
             &:hover {
-                color: #91E5FA;
-	            background-color: #400C0C;
+                color: orange;
+                background-color: #400C0C;
+
             }
         }
     }

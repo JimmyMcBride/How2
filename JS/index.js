@@ -1,27 +1,6 @@
 // Animations
 
-    // Shake animations
-
-const slowShake = function(){
-
-    this.animate([
-        {transform: 'translate(1px, 1px) rotate(0deg)'},
-        {transform: 'translate(-1px, -2px) rotate(-1deg)'},
-        {transform: 'translate(-3px, 0px) rotate(1deg)'},
-        {transform: 'translate(3px, 2px) rotate(0deg)'},
-        {transform: 'translate(1px, -1px) rotate(1deg)'},
-        {transform: 'translate(-1px, 2px) rotate(-1deg)'},
-        {transform: 'translate(-3px, 1px) rotate(0deg)'},
-        {transform: 'translate(3px, 1px) rotate(-1deg)'},
-        {transform: 'translate(-1px, -1px) rotate(1deg)'},
-        {transform: 'translate(1px, 2px) rotate(0deg)'},
-        {transform: 'translate(1px, -2px) rotate(-1deg)'}
-        ], {
-        duration: 500,
-        easing: 'ease-in-out',
-        direction: 'normal',
-    })
-}
+    // Shake animation
 
 const fastShake = function(){
     this.animate([
@@ -38,7 +17,7 @@ const fastShake = function(){
     })
 }
 
-    // Spin animation
+    // Spin animations
 
 const batmanAnimation = function(){
     this.animate([
@@ -53,21 +32,20 @@ const batmanAnimation = function(){
         })
 }
 
-const spinToWin = function(){
+const coinSpin = function(){
     this.animate([
-        {transform: 'rotateY(180deg)'},
-        {transform: 'rotateX(180deg)'},
-        {transform: 'rotateY(180deg)'},
-        {transform: 'rotateX(180deg)'},
+        {transform: 'rotate3d(0, 1, 0, 0deg)'},
+        {transform: 'rotate3d(0, 1, 0, 180deg)'},
+        {transform: 'rotate3d(0, 1, 0, 360deg)'}
         ], {
-        duration: 250,
+        duration: 750,
         easing: 'ease-in-out',
         iterations: 1,
-        direction: 'alternate',
+        direction: 'normal',
         })
 }
 
-    // Events
+    // Nav Events
 
 const button = document.querySelector('button')
 const navItem = document.querySelectorAll('nav a')

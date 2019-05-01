@@ -45,7 +45,81 @@ const coinSpin = function(){
         })
 }
 
-    // Nav Events
+    // Slide Animations
+
+const leftTopSlide = function(){
+    this.animate([
+        {transform: 'translate(-200px, -200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+const midTopSlide = function(){
+    this.animate([
+        {transform: 'translate(0px, -200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+const rightTopSlide = function(){
+    this.animate([
+        {transform: 'translate(200px, -200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+const leftBtmSlide = function(){
+    this.animate([
+        {transform: 'translate(-200px, 200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+const midBtmSlide = function(){
+    this.animate([
+        {transform: 'translate(0px, 200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+const rightBtmSlide = function(){
+    this.animate([
+        {transform: 'translate(200px, 200px)'},
+        {transform: 'translate(0px, 0px)'},
+        ], {
+        duration: 750,
+        easing: 'ease-in-out',
+        iterations: 1,
+        direction: 'normal',
+        })
+}
+
+    // Nav  Events
 
 const button = document.querySelector('button')
 const navItem = document.querySelectorAll('nav a')

@@ -122,8 +122,6 @@ const rightBtmSlide = function(){
     // Nav  Events
 
 const button = document.querySelector('button')
-const navItem = document.querySelectorAll('nav a')
-
 
 button.addEventListener('click', fastShake)
 

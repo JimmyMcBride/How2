@@ -264,6 +264,7 @@ footer {
 .main-content {
   display: flex;
   margin-top: 120px;
+  margin-bottom: 70px;
 }
 @media (max-width: 755px) {
   .main-content {
@@ -340,6 +341,10 @@ footer {
 }
 .main-content .recent p {
   margin-left: 5px;
+}
+.bottom-padding {
+  font-size: 1rem;
+  width: 100%;
 }
 .features-content {
   margin-top: 175px;
